@@ -11,10 +11,6 @@ program ini rencananya akan menggunakan :
 ```
 portfolio-website/
 ├── index.html
-├── about.html
-├── skills.html
-├── portfolio.html
-├── contact.html
 ├── css/
 │   └── style.css
 ├── js/
