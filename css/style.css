@@ -46,6 +46,7 @@ nav{
     z-index: 1000;
     border-bottom: 1px solid var(--border);
 }
+
 nav ul{
 
     display:flex;
@@ -65,7 +66,10 @@ nav a:hover{
 
     color:#111;
 }
-
+nav a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
 /*================ HERO =================*/
 
 .hero{
@@ -194,7 +198,8 @@ nav a:hover{
 }
 
 /*================ ABOUT =================*/
-#about{
+
+.about{
     background-color: #e5e7eb;
     border-radius: 10px;
     width:90%;
@@ -202,7 +207,6 @@ nav a:hover{
     margin:auto;
     padding: 60px;
     display:flex;
-   
     align-items:center;
     gap:50px;
 }
@@ -227,12 +231,127 @@ nav a:hover{
    margin: 20px;
 }
 .text-skill{
-    font-size:60px;
+    font-size:45px;
     line-height:80px;
     color:#374151;
     margin-top:70px;
     text-align:center;
 }
+
+#project{
+    margin: auto;
+    width:90%;
+    align-items:center;
+    max-width:1200px;
+   
+    
+}
+.project-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+.project-item{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;             
+    flex-direction: column;     
+    height: 100%;
+}
+.project-item span{
+    padding: 10px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #d1d5db;
+
+}
+.project-item h3{
+    font-size: 24px;
+    color: #374151;
+    margin-top: 10px;
+}
+.project-item p{
+    font-size: 16px;
+    color: #6b7280;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.project-link{
+    color:#374151;
+    font-weight:500;
+    margin-top:auto;
+}
+.badge{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+a{
+    text-decoration:none;
+    color:#374151;
+}
+#contact{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.contact-grid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    background:#e5e7eb;
+
+    padding:50px;
+
+    border-radius:16px;
+
+    gap:60px;
+}
+.contact-title{
+    flex:1;
+    padding-bottom:20px;
+}
+
+.contact-title h2{
+    font-size:48px;
+    line-height:1.2;
+    text-align:center;
+}
+.contact-text{
+    flex:2;
+}
+
+.contact-text p{
+    margin:0;
+    line-height:1.8;
+    color:#666;
+}
+.contact-links{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.contact-links a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#333;
+}
+
 /*================ footer =================*/
 .footer-container{
     background-color: #1f2937;
