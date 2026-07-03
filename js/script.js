@@ -12,3 +12,18 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.5 
 });
 sections.forEach(section => observer.observe(section));
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+const MobilenavLinks = document.querySelectorAll('nav ul a');
+
+MobilenavLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});

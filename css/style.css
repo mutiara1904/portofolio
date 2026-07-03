@@ -70,6 +70,23 @@ nav a.active {
   color: #2563eb;
   font-weight: 600;
 }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #1e293b;
+  border-radius: 2px;
+}
 /*================ HERO =================*/
 
 .hero{
@@ -366,6 +383,10 @@ a{
 /*================ RESPONSIVE =================*/
 
 @media(max-width:900px){
+
+.about{
+    flex-direction:column;
+}
 .grid-skill{
     grid-template-columns: repeat(4, 1fr);
 }
@@ -387,10 +408,24 @@ a{
 
     justify-content:center;
 }
+.menu-toggle {
+    display: flex;
+}
+nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    gap: 16px;
+    list-style: none;
+  }
 
-nav{
-
-    display:none;
+nav ul.active {
+    display: flex;
 }
 
 .hero-text h2{
